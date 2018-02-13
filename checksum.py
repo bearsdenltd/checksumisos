@@ -3,7 +3,7 @@ import hashlib, os
 ubuntuDict = {'560df9005d3bc355bf3239cd8a18f744': 'Ubuntu 17.10', '0d9fe8e1ea408a5895cbbe3431989295': 'Ubuntu 16.10'}
 kaliDict = {'545adb675c5982de2bb69a04d1663342b534164e': 'Kali Light 2017', 'ed88466834ceeba65f426235ec191fb3580f71d50364ac5131daec1bf976b317': 'Kali 64 Bit', 'b541a78a063b6385365ac00248631c4a18c92b8c4e3618db0b1bf751b495149f': 'Kali 32 Bit'}
 
-for root, dirs, files in os.walk('/home/stephen/Downloads/'):
+for root, dirs, files in os.walk('os.getcwd()'):
     for isoFile in files:
         if isoFile is None:
             print("There are no isos in your current directory")
